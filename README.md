@@ -5,17 +5,17 @@ MI路由器逆向分析
 
 1.通过Binwalk提取小米路由器固件，提取信息如下
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/26fafb0e-5a82-4eab-9d86-86b4bc41d5e6/Untitled.png)
+![Untitled](1.png)
 
 提取出来该路由器的得到ubi_rootfs文件，进入ubi_rootfs后发现未经过加密
 
 2.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ec6877e7-b009-454a-bca2-a86201b46ba8/Untitled.png)
+![Untitled](2.png)
 
 该处的配置可以访问任意文件读取根目录下的所有文件，而且是root权限
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a5a6726e-68c7-4bd5-aaed-c7aa7f4621a3/Untitled.png)
+![Untitled](3.png)
 
 通过获取前端的加密代码可知密码是
 
